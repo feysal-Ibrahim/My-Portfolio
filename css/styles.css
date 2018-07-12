@@ -1,10 +1,18 @@
 body{
+<<<<<<< HEAD
   background-color: black;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+=======
+  text-align: center;
+ background-color: black;
+ }
+h1{
+  color: blue;
+>>>>>>> 02af0e744bfd408b2dc19f05f813b429ef93ccc6
 }
 
 li {
