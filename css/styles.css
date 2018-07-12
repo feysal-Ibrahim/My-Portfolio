@@ -1,31 +1,64 @@
 body{
-  text-align: center;
-  background-image: url( ../images/pro.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
 }
-h1{
-  color: blue;
-}
-#btn{
-font-style: italic;
-text-decoration: none;
- border-radius: 9px;
-  font-family:  sans-serif;
-  color: red;
-  font-size: 100%;
-  padding: 15px 15px;
-  border: solid red 2px;
-  text-decoration: none;
-}
-@media screen and (min-width: 400px) {
-    body {
-        background-color: lightgreen;
-    }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-@media screen and (min-width: 800px) {
-    body {
-        background-color: lavender;
-    }
+li {
+    display: inline;
+    float: right;
+    border-radius: 1px solid green;
+    padding: 60px;
+}
+.container{
+  padding: 200px;
+  margin-right: 210px;
+}
+.html{
+  font-family: serif;
+  text-align: center;
+  padding-top: 200px;
+  padding-right: 160px;
+}
+.footer{
+  background-color: white;
+  padding: 90px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#btn{
+  border-radius: 6px;
+  font-family: sans-serif;
+  color: green;
+  font-size: 105%;
+  padding: 15px 10px;
+  border: solid white 2px;
+  text-decoration: none;
+}
+#name{
+  color: green;
 }
