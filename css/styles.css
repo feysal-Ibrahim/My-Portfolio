@@ -1,9 +1,7 @@
 body{
   text-align: center;
-  background-image: url( ../images/pro.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+ background-color: black;
+ }
 h1{
   color: blue;
 }
