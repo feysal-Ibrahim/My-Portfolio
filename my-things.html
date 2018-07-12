@@ -6,12 +6,6 @@
   </head>
   <body>
     <style media="screen">
-    body{
-      background-image: url(images/brother.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-
-    }
 #home{
   color: red;
 }
@@ -56,14 +50,21 @@
 color: red;
 border: solid white;
 }
+body{
+ background-color: black;
+ /* Use a media query to add a breakpoint at 800px: */
+ @media screen and (max-width: 800px) {
+   .left, .main, .right {
+     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+
+}
 
     </style>
       <a id="home" href="feisal.html">back home</a>
 
   </body>
   <div class="container">
-  <div class="panel">
-    <div class="panel-default">
+    <div class="jumbatron">
     <p>THIS IS A LIST OF MY PROJEJECT I DID SINCE I STARTED PROGRAMMING</p>
     <ul>
       <br>
@@ -81,8 +82,8 @@ border: solid white;
     </ul>
   </div>
 </div>
-</div>
-  <div class="container-fluid"
+  <div class="container-fluid">
+<div class="jumbatron">
 <div class="contact"
  <p><strong>IF YOU HAVE ANY QUESTIONS OR SUGGESTIONS PLEASE DO NOT HESITATE TO CONATCT ME ON THIS BELOW LINKS</strong></p>
   <div class="container-fluid">
