@@ -1,17 +1,18 @@
 $(document).ready(function() {
       $("#blanks form").submit(function(event) {
-        var person1Input = $("input#fname").val();
-        var person2Input = $("input#lname").val();
-        var animalInput= $("input#country").val();
-        var exclamationInput = $("input#subject").val();
+        var firstnameInput = $("input#firstname").val();
+        var lastnameInput = $("input#lastname").val();
+        var countryInput= $("input#country").val();
+        var subjectInput = $("input#subject").val();
        
 
-        $(".fname").text(fnameInput);
-        $(".lname").text(lnameInput);
+        $(".firstname").text(firstnameInput);
+        $(".lastname").text(lastnameInput);
         $(".country").text(countryInput);
         $(".subject").text(subjectInput);
-        alert("Thank you for your feedack");
+        alert("Thank you for your feedack!");
 
         event.preventDefault();
+
       });
     });
