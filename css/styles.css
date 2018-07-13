@@ -1,72 +1,75 @@
 body{
-<<<<<<< HEAD
   background-color: black;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-=======
   text-align: center;
- background-color: black;
+ background-color: white;
  }
 h1{
-  color: blue;
->>>>>>> 02af0e744bfd408b2dc19f05f813b429ef93ccc6
+  color: white;
 }
 
 li {
     display: inline;
-    float: right;
-    border-radius: 1px solid green;
+    border-radius: solid green;
     padding: 60px;
+    text-align: center;
 }
-.container{
+.container-fluid{
   padding: 200px;
-  margin-right: 210px;
+  padding-left: 750px;
+  background-color:red;
 }
-.html{
-  font-family: serif;
-  text-align: center;
-  padding-top: 200px;
-  padding-right: 160px;
+.container-fluid p{
+  padding-left: 5px;
+  color: white;
+  opacity: 0.5;
+
 }
+img{
+   border-radius: 90px;
+   padding-bottom:1000px;
+}
+
 .footer{
   background-color: white;
   padding: 90px;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#btn{
-  border-radius: 6px;
-  font-family: sans-serif;
-  color: green;
-  font-size: 105%;
-  padding: 15px 10px;
-  border: solid white 2px;
-  text-decoration: none;
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: tan;
+  }
 }
-#name{
-  color: green;
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
