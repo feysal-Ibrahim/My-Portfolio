@@ -1,6 +1,7 @@
 <!DOCTYPE html>
    <html>
      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
           <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -9,6 +10,9 @@
      </head>
      <body>
       <style>
+      @import url('https://fonts.googleapis.com/css?family=Kanit');
+      @import url('https://fonts.googleapis.com/css?family=Acme');
+      @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
         /* Style inputs with type="text", select elements and textareas */
         input[type=text], select, textarea {
             width: 100%; /* Full width */
@@ -112,7 +116,18 @@
         p{
           text-align: center;
         }
-
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            body {
+                background-color: black;
+                color: white;
+            }
+        }
+        @media screen and (min-width: 768px) {
+          body {
+            background-color: yellowgreen;
+          }
+        }
+          
         
       </style>
       <a id="baha"href="index.html">back home</a>
