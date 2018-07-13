@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
   </head>
   <body>
     <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Kanit');
+    @import url('https://fonts.googleapis.com/css?family=Acme');
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 #home{
   color: red;
 }
@@ -58,6 +61,18 @@ body{
      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
 
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+}
+  
 
     </style>
       <a id="home" href="index.html">back home</a>
