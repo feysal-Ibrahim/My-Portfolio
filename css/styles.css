@@ -6,16 +6,7 @@ html, body {
   height: 100%;
   width: 100%;
 }
-body{
-  background-color: black;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  text-align: center;
- background-color: white;
- }
+
 h1{
   color: white;
   text-align: center;
@@ -26,21 +17,7 @@ li {
     border-radius: solid green;
     letter-spacing: 6px;
     text-align: center;
-    border: 6px solid yellowgreen;
 }
-.container-fluid{
-  padding: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  background-color:black;
-}
-.container-fluid p{
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  opacity: 0.5;
-  text-align: center; 
 
 }
 img{
@@ -54,7 +31,7 @@ img{
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
     body {
-        background-color: black;
+        background-color: lightblue;
         color: white;
     }
 }
