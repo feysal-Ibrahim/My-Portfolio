@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"crossorigin="anonymous">
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <title></title>
   </head>
   <body>
@@ -12,47 +15,151 @@
 #home{
   color: blue;
 }
-.container{
-  text-align: center;
-  color: yellow;
+p{
+        color: black;
 }
-.container li{
-  list-style: none;
-}
-.by {
-  border-radius: 2px;
-  font-family:  sans-serif;
-  color: yellow;
-  font-size: 135%;
-  border: solid white 2px;
-  text-decoration: none;
-}
-.by:hover {
-  color: white;
-  border: solid white;
+h1{
+    color: white;
 }
 
-.container-fluid li a:hover {
-color: blue;
-border: solid white;
-}
+ .hovereffect {
+     width: 100%;
+     height: 100%;
+     float: left;
+     overflow: hidden;
+     position: relative;
+     text-align: center;
+     cursor: default;
+ }
+ .hovereffect a{
+     font-size: 30px;
+ }
+ .hovereffect .overlay {
+     width: 100%;
+     position: absolute;
+     overflow: hidden;
+     left: 0;
+    top: auto;
+    bottom: 0;
+    padding: 1em;
+    height: 4.75em;
+    background: #79FAC4;
+    color: #3c4a50;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    visibility: hidden;
+
+ }
+
+ .hovereffect img {
+     display:block;
+     position: relative;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    width: 400px;
+    height: 400px;
+    padding: 60px;
+ }
+
+ .hovereffect:hover img {
+ -webkit-transform: translate3d(0,-10%,0);
+    transform: translate3d(0,-10%,0);
+ }
+
+ .hovereffect h2 {
+     text-transform: uppercase;
+     color: #fff;
+     text-align: center;
+     position: relative;
+     font-size: 17px;
+     padding: 10px;
+     background: rgba(0, 0, 0, 0.6);
+    float: left;
+    margin: 0px;
+    display: inline-block;
+ }
+
+ .hovereffect a.info {
+     display: inline-block;
+     text-decoration: none;
+     padding: 7px 14px;
+     text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+ }
+ .hovereffect a.info:hover {
+     box-shadow: 0 0 5px #fff;
+ }
+
+ .hovereffect:hover p.icon-links a:hover,
+ .hovereffect:hover p.icon-links a:focus {
+    color: #252d31;
+ }
+
+ .hovereffect h2,
+ .hovereffect p.icon-links a {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,200%,0);
+    transform: translate3d(0,200%,0);
+    visibility: visible;
+ }
+
+
+
+ .hovereffect:hover .overlay,
+ .hovereffect:hover h2,
+ .hovereffect:hover p.icon-links a {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+ }
+
+ .hovereffect:hover h2 {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+ }
+
+ .hovereffect:hover p.icon-links a:nth-child(3) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+ }
+
+ .hovereffect:hover p.icon-links a:nth-child(2) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+ }
+
+ .hovereffect:hover p.icon-links a:first-child {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+ }
+
 body{
- background-color: black;
+ background-color: lightblue;
  /* Use a media query to add a breakpoint at 800px: */
  @media screen and (max-width: 800px) {
    .left, .main, .right {
      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
 
+
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+
+.hovereffect a{
+    font-size: 30px;
+}
+@media screen and (min-width: 780px) and (max-width: 967px) {
     body {
-        background-color: black;
+        background-color: lightblue;
         color: white;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 68px) {
   body {
-    background-color: yellowgreen;
+    background-color: lightblue;
   }
 }
   
@@ -61,22 +168,56 @@ body{
       <a id="home" href="index.html">back home</a>
       <br>
       <br>
-  <div class="container">
-    <div class="jumbatron">
-    <p><strong>THIS IS A LIST OF MY PROJEJECT I DID SINCE I STARTED PROGRAMMING</strong></p>
-    <ul>
-      <br>
-      <br>
-      <li><a class="by" href="https://github.com/feysal-Ibrahim/my-first-webpage.html">First Webpage</a></li>
-      <br>
-      <br>
-<li><a class="by" href="https://github.com/feysal-Ibrahim/personal-website">Personal</a></li>
-<br>
-<br>
-<li><a class="by" href="https://github.com/feysal-Ibrahim/Transparent-menu-with-icon">Transport Menu</a></li>
-<br>
-<br>
-<li><a class="by" href="https://github.com/feysal-Ibrahim/leap-year-project">Leap Year</a></li>
-    </ul>
-  </div>
-</div>
+      <h1>portfolio</h1>
+      <p><strong>THIS IS A LIST OF MY PROJEJECT I DID SINCE I STARTED PROGRAMMING</strong></p>
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/brother.jpg" alt="">
+                <a href="class="by" href="https://github.com/feysal-Ibrahim/my-first-webpage.html">First Webpage</a>
+                    <div class="overlay">
+                        <h2>HTML</h2>
+                    </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/css.jpg" alt="">
+                <a href="https://github.com/feysal-Ibrahim/Transparent-menu-with-icon">Transparent Menu</a>
+                    <div class="overlay">
+                        <h2>CSS</h2>
+                    </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/js.png" alt="">
+                <a href="https://github.com/feysal-Ibrahim/leap-year-project">Leap Year</a>
+                    <div class="overlay">
+                        <h2>JAVASCRIPT and JQUERY</h2>
+                    </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/python2.jpg"style  alt="">
+                <a href="https://github.com/feysal-Ibrahim/personal-website">Personal</a>
+                    <div class="overlay">
+                        <h2>PYTHON</h2>
+                    </div>
+            </div>
+        </div>
+      </div>
+      </div>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
