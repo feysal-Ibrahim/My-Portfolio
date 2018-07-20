@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
     <title></title>
   </head>
@@ -11,61 +12,59 @@
   @import url('https://fonts.googleapis.com/css?family=Kanit');
   @import url('https://fonts.googleapis.com/css?family=Acme');
   @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
-    h1{
-      color: white;
-      text-align: center;
-      padding: 5px;
-    }
-    p{
-      color: white;
-      text-align: center;
-    }
-    h3{
-      text-align: center;
-    }
-    h4{
-      text-align: center;
-    }
-    .container li{
-      text-align: center;
-      list-style: none;
-    }
-    .container{
-      padding: 5px;
-    }
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        body {
-            background-color: black;
-            color: white;
-        }
-    }
-    @media screen and (min-width: 768px) {
+  .row img{
+             width: 200px;
+             height: 200px;
+             border-radius: 50%;
+             padding-top: 40px;
+             margin: auto;
+  }
+.row {
+  text-align: center;
+  padding: 100px;
+}
+
+   
+  @media screen and (min-width: 40px) and (max-width: 767px) {
       body {
-        background-color: yellowgreen;
+          background-color: black;
+          color: white;
       }
+  }
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: lightblue;
     }
+  }
   </style>
     <a id="abiy"href="index.html">back home</a>
-    <div class="container">
-      <div class="brazil">
-<h1>Feisal Ibrahim</h2>
-<br>
-<br>
-    <h3>Web Developer/Comedian/Blogger</h3>
-    <br>
-    <br>
-    <br>
-    <p><strong>My name is Feisal Ibrahim,a practicing web developer.</strong></p>
-    <h4>My Hobbies</h4>
-      <ul>
-      <li><strong>SLEEPING</strong></li>
-      <li><strong>CONTENT CREATING</strong></li>
-      <li><strong>BLOGGING</strong></li>
-      <li><strong>CODING</stromg></li>
-    </ul>
+      <div class="row">
+      <div class="col-lg-3 col-md-4">
+              <img class="img-responsive" src="images/swim.jpg" alt="">
       </div>
-     </div>
-    
+      <br>
+      <div class="col-md-8">
+        <br>
+       <br>
+      <h1>Hello</h1>
+        <br>
+        <br>
+        <p>It's really nice to have you here, feel free to take a tour on my site and learn more about my projects.
+</p>
+<br>
+<br>
+<p>My name is Feisal and I'm a Front End developer who loves to create with code and color awesome web apps. I started my web journey around 2017 with HTML and CSS. During the years I went through a several Online Courses on w3 school and code academy.</p>
+<br>
+<p>My goal was to get better and better in Code, I tried out a few languages like PHP, Ruby, Python and a few Front-end frameworks. It is not bad to know a basic understanding of how the web and Databases work but I know now my place is in a Front End.</p>
+<br>
+<p>I created this site and my social pages to shear with you all my projects and experience, if you like it I would love to hear from you.</p>
+
+      </div>
+    </div>
+    </div>
+    <script>
+  var age = parseInt(prompt("Please Enter your age: "));
+</script>
 
   </body>
 </html>
