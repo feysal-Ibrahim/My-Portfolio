@@ -4,6 +4,9 @@
   <head>
     <meta name=viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="/css/styles.css">
     <title></title>
   </head>
@@ -12,17 +15,28 @@
   @import url('https://fonts.googleapis.com/css?family=Kanit');
   @import url('https://fonts.googleapis.com/css?family=Acme');
   @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+  html, body {
+    font-family: Arial,  sans-serif;
+     background-color: lightblue;
+     margin:0;
+       height:1000px;
+       position:relative
+  }
   .row img{
              width: 200px;
              height: 200px;
              border-radius: 50%;
              padding-top: 40px;
              margin: auto;
-  }
+           }
 .row {
   text-align: center;
   padding: 100px;
 }
+#drinks, #under-21 {
+       display: none;
+     }
+
     @media screen and (min-width: 40px) and (max-width: 767px) {
         body {
             background-color: black;
@@ -45,32 +59,39 @@
 </style>
     <a id="abiy"href="index.html">back home</a>
       <div class="row">
-      <div class="col-lg-3 col-md-4">
+      <div class="col-lg-3 col-md-3">
               <img class="img-responsive" src="images/swim.jpg" alt="">
       </div>
       <br>
-      <div class="col-md-8">
+      <div class="col-md-9">
+        <div class="container"> 
+      <div id="drinks"><h1>Hello
         <br>
-       <br>
-      <h1>Hello</h1>
+     </h1><p>It's really nice to have you here, feel free to take a tour on my site and learn more about my projects.</p>
         <br>
-        <br>
-        <p>It's really nice to have you here, feel free to take a tour on my site and learn more about my projects.
-</p>
-<br>
-<br>
 <p>My name is Feisal and I'm a Front End developer who loves to create with code and color awesome web apps. I started my web journey around 2017 with HTML and CSS. During the years I went through a several Online Courses on w3 school and code academy.</p>
 <br>
-<p>My goal was to get better and better in Code, I tried out a few languages like PHP, Ruby, Python and a few Front-end frameworks. It is not bad to know a basic understanding of how the web and Databases work but I know now my place is in a Front End.</p>
-<br>
-<p>I created this site and my social pages to shear with you all my projects and experience, if you like it I would love to hear from you.</p>
-
-      </div>
-    </div>
-    </div>
+<p>My goal was to get better and better in Code, I tried out a few languages like PHP, Ruby, Python and a few Front-end frameworks. It is not bad to know a basic understanding of how the web and Databases work but I know now my place is in a Front End.I created this site and my social pages to shear with you all my projects and experience, if you like it I would love to hear from you.</p>
+</div>
+<div id="under-21"><h1>Sorry,you are underage</h1><p>It's </p>
+</div>
+</div>
+</div>
+</div>
     <script>
-  var age = parseInt(prompt("Please Enter your age: "));
-</script>
 
-  </body>
+      $(document).ready(function() {
+        var age = parseInt(prompt("Please Enter Your Age"));
+
+        if (age > 21) {
+          $('#drinks').show();
+        } else if (age === 21) {
+          alert("Now don't go crazy!");
+          $('#drinks').show();
+        } else {
+          $('#under-21').show();
+        }
+      });
+</script>
+</body>
 </html>
