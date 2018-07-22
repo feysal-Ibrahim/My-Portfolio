@@ -3,6 +3,9 @@
 html, body {
   font-family: Arial,  sans-serif;
    background-color: lightblue;
+   margin:0;
+     height:1000px;
+     position:relative
 }
 
 h1{
@@ -48,10 +51,6 @@ h1{
   background: #00aff0;
   color: white;
 }
-.footer a{
-  display: inline
-
-}
  .col-md-11 h1{
   font-size: 80px;
   margin-top:100px;
@@ -85,13 +84,22 @@ color: #555; /* Add a dark-grey background on hover */
 .center a:hover{
   border: 1px solid white;
 }
-
   address{
     color: red;
     text-align: center;
     background-color: orange;
 
   }
+ footer{
+  position:absolute;
+   bottom:0;
+   left:0;
+   right:0;
+   font-size:16px;
+   text-align:center;
+   padding:10px
+ }
+
     @media screen and (min-width: 40px) and (max-width: 767px) {
         body {
             background-color: black;
