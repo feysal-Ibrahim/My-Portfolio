@@ -33,7 +33,7 @@
   text-align: center;
   padding: 100px;
 }
-#drinks, #under-21 {
+#restricts, #under-21 {
        display: none;
      }
 
@@ -65,7 +65,7 @@
       <br>
       <div class="col-md-9">
         <div class="container"> 
-      <div id="drinks"><h1>Hello
+      <div id="restricts"><h1>Hello
         <br>
      </h1><p>It's really nice to have you here, feel free to take a tour on my site and learn more about my projects.</p>
         <br>
@@ -73,7 +73,7 @@
 <br>
 <p>My goal was to get better and better in Code, I tried out a few languages like PHP, Ruby, Python and a few Front-end frameworks. It is not bad to know a basic understanding of how the web and Databases work but I know now my place is in a Front End.I created this site and my social pages to shear with you all my projects and experience, if you like it I would love to hear from you.</p>
 </div>
-<div id="under-21"><h1>Sorry,you are underage</h1><p>It's </p>
+<div id="under-21"><h1>SORRY<BR>YOU CANNOT VIEW  THE CONTENT OF THIS PAGE!!</BR></h1>
 </div>
 </div>
 </div>
@@ -81,15 +81,16 @@
     <script>
 
       $(document).ready(function() {
-        var age = parseInt(prompt("Please Enter Your Age"));
+        var age = parseInt(prompt("Please Enter Your Age and Press OK"));
 
-        if (age > 21) {
-          $('#drinks').show();
-        } else if (age === 21) {
-          alert("Now don't go crazy!");
-          $('#drinks').show();
+        if (age > 91) {
+          $('#restricts').show();
+        } else if (age ===90) {
+          alert("Now you can dive into it!!!");
+          $('#restricts').show();
         } else {
           $('#under-21').show();
+          alert("This page has been put under some age restriction by the DEVELOPER");
         }
       });
 </script>
