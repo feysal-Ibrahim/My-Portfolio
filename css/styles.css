@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Faster+One');
 @import url('https://fonts.googleapis.com/css?family=Acme');
-html, body {
-  font-family: Arial,  sans-serif;
-   background-color: lightblue;
-   margin:0;
-     height:1000px;
-     position:relative
-}
+
 
 h1{
   color: white;
