@@ -96,7 +96,7 @@ h1{
    right:0;
    font-size:16px;
    text-align:center;
-   padding:10px
+   padding:10px;
  }
  #myBtn {
    display: none;
@@ -120,7 +120,7 @@ h1{
  }
  
 
-    @media screen and (min-width: 40px) and (max-width: 767px) {
+    @media screen and (min-width: 40px) and (max-width: 867px) {
         body {
             background-color: black;
             color: white;
