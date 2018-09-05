@@ -1,6 +1,5 @@
     @import url('https://fonts.googleapis.com/css?family=Faster+One');
     @import url('https://fonts.googleapis.com/css?family=Acme');
-    html,
     body {
         font-family: Arial, sans-serif;
         background-color: black;
@@ -91,7 +90,7 @@
 address {
     color: red;
     text-align: center;
-    background-color: orange;
+    background-color: black;
 }
 footer {
     position: absolute;
@@ -129,6 +128,12 @@ footer {
     
     .center a {
         font-size: 12px;
+    }
+    
+    address {
+        color: red;
+        text-align: center;
+        background-color: white;
     }
 }
 @media screen and (min-width: 768px) {
