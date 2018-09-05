@@ -26,8 +26,8 @@
     text-align: center;
   }
   .row img{
-             width: 200px;
-             height: 200px;
+             width: 300px;
+             height: 300px;
              border-radius: 50%;
              margin: auto;
              padding: 0px;
@@ -35,9 +35,6 @@
 .row {
   text-align: center;
 }
-#restricts, #under-21 {
-       display: none;
-     }
 
     @media screen and (min-width: 40px) and (max-width: 2500px) {
         body {
@@ -52,7 +49,7 @@
         }
          body p{
             color: white;
-            font-size: 45px;
+            font-size: 35px;
         }
     }
     @media screen and (min-width: 768px) {
@@ -76,7 +73,6 @@
       <br>
       <div class="col-md-8">
         <div class="container"> 
-      <div id="restricts">
         <h1>Hello!</h1>
         <br>
       <p>It's really nice to have you here, feel free to take a tour on my site and learn more about my projects.</p>
@@ -90,26 +86,7 @@
 <br>
 <P>I created this site and my social pages to shear with you all my projects and experience, if you like it I would love to hear from you.</p>
 </div>
-<div id="under-21"><h1>SORRY<BR>YOU CANNOT VIEW  THE CONTENT OF THIS PAGE!!</BR></h1>
 </div>
 </div>
-</div>
-</div>
-    <script>
-
-      $(document).ready(function() {
-        var age = parseInt(prompt("Please Enter Your Age and Press OK"));
-
-        if (age > 91) {
-          $('#restricts').show();
-        } else if (age ===90) {
-          alert("Now you can dive into it!!!");
-          $('#restricts').show();
-        } else {
-          $('#under-21').show();
-          alert("This page has been put under some age restriction by the DEVELOPER");
-        }
-      });
-</script>
 </body>
 </html>
