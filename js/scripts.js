@@ -1,18 +1,16 @@
-$(document).ready(function() {
-      $("#blanks form").submit(function(event) {
-        var firstnameInput = $("input#firstname").val();
-        var lastnameInput = $("input#lastname").val();
-        var countryInput= $("input#country").val();
-        var subjectInput = $("input#subject").val();
-       
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() { scrollFunction() };
 
-        $(".firstname").text(firstnameInput);
-        $(".lastname").text(lastnameInput);
-        $(".country").text(countryInput);
-        $(".subject").text(subjectInput);
-        alert("Thank you for your feedack!");
+function scrollFunction() {
+    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
 
-        event.preventDefault();
-
-      });
-    });
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
