@@ -209,7 +209,7 @@
         height: 100vh;
         min-height: 500px;
         max-height: 1080px;
-        background: url(../images/web.jpg);
+        background: url(../images/splash.jpeg);
         background-size: cover;
         background-size: 1900px 1000px;
         background-repeat: no-repeat;
@@ -320,13 +320,13 @@
     
     #about p {
         color: black;
-        font-family:ariel;
+        font-family: ariel;
         font-size: 1.35em;
     }
     
     .image-container img {
-        height:400px;
-        width:800px;
+        height: 400px;
+        width: 800px;
     }
     
     #projects {
