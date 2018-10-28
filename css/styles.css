@@ -68,7 +68,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #e0ebe8;
+    background: #c8f7c5;
     z-index: 1;
     opacity: 7.0
 }
@@ -149,6 +149,11 @@ nav ul li a:hover {
     width: 280px;
     margin: 40px 100px;
     /* background: url("https://res.cloudinary.com/dck40m3wf/image/upload/v1455459914/Portfolio/fancy-floral-pattern-384.jpg") repeat; */
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 10px;
 }
 
 .project-pic {
