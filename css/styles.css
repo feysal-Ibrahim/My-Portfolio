@@ -1,4 +1,6 @@
     html {
+        font-size: 137.5%;
+        text-size-adjust: auto;
         display: block;
     }
     
@@ -7213,8 +7215,36 @@
         letter-spacing: 1px
     }
     
-    .intro p {
+    </style>.intro p {
         color: green;
+    }
+    
+    nav ul {
+        text-align: right;
+        position: fixed;
+        width: 100%;
+        background-color: #e0ebe8;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: 55px;
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
+    
+    nav ul li a {
+        color: #008080;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        color: green;
+    }
+    
+    .work {
+        padding-top: 60px;
+        margin-top: -60px;
     }
     
     .work .work-header {
@@ -7229,7 +7259,7 @@
         display: inline-block;
         overflow: hidden;
         border: 2px solid lightblue;
-        height: 100px;
+        height: 220px;
         width: 280px;
         margin: 40px 100px;
         /* background: url("https://res.cloudinary.com/dck40m3wf/image/upload/v1455459914/Portfolio/fancy-floral-pattern-384.jpg") repeat; */
