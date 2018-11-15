@@ -209,9 +209,9 @@
         height: 100vh;
         min-height: 500px;
         max-height: 1080px;
-        background: url(../images/web.jpg);
+        background: url(https://udemy-images.udemy.com/course/480x270/1485908_c639_4.jpg);
         background-size: cover;
-        background-size: 1900px 1000px;
+        /* background-size: 1900px 1000px; */
         background-repeat: no-repeat;
         padding: 15px;
         overflow: hidden
@@ -236,7 +236,8 @@
         font-size: 5em;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        line-height: 0.9em
+        line-height: 0.9em;
+        color: white;
     }
     
     #lead-content h4 {
@@ -244,11 +245,12 @@
         font-weight: 500;
         font-size: 3em;
         margin-bottom: 15px;
-        margin-top: 15px
+        margin-top: 15px;
+        color: white;
     }
     
     #lead-content p {
-        color: black;
+        color: white;
         font-weight: 300;
         font-size: 1.5em;
         margin-bottom: 15px;
@@ -263,7 +265,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: rgba(33, 125, 187, 0.8);
+        /* background: rgba(33, 125, 187, 0.8); */
         z-index: 1;
         opacity: 1.0
     }
@@ -309,8 +311,10 @@
     }
     
     #about {
-        padding: 75px 15px;
-        border-bottom: 1px solid #dcd9d9
+        padding: 0px;
+        border-bottom: 1px solid #dcd9d9;
+        text-align: center;
+        padding: 20px;
     }
     
     #about h2 {
@@ -320,13 +324,13 @@
     
     #about p {
         color: black;
-        font-family:ariel;
+        font-family: ariel;
         font-size: 1.35em;
     }
     
     .image-container img {
-        height:400px;
-        width:800px;
+        height: 400px;
+        width: 800px;
     }
     
     #projects {
@@ -429,12 +433,11 @@
         font-weight: 500
     }
     
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 92px) {
         #lead {
             height: auto;
             min-height: auto;
             max-height: auto;
-            padding: 100px 15px
         }
         #lead-content {
             position: relative;
@@ -551,5 +554,88 @@
                     background-color: tomato;
                 }
             }
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        #lead {
+            position: relative;
+            /* height: 100vh; */
+            background: url(https://udemy-images.udemy.com/course/480x270/1485908_c639_4.jpg);
+            background-size: cover;
+            /* background-size: 1900px 1000px; */
+            background-repeat: no-repeat;
+            /* padding: 15px; */
+            overflow: hidden
+        }
+        #lead-content {
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center
+        }
+        #lead-content h1,
+        #lead-content h4 {
+            margin: 0
+        }
+        #lead-content h1 {
+            font-weight: 900;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            line-height: 0.9em
+        }
+        #lead-content h4 {
+            color: #a0cfee;
+            font-weight: 500;
+            font-size: 3em;
+            margin-bottom: 15px;
+            margin-top: 15px
+        }
+        #lead-content p {
+            color: black;
+            font-weight: 300;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-family: 'Philosopher', sans-serif;
+        }
+        #lead-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(33, 125, 187, 0.8);
+            z-index: 1;
+            opacity: 7.0
+        }
+        #lead-down {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 10;
+            bottom: 15px;
+            color: #fff
+        }
+        #lead-down span {
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 3px solid #a0cfee;
+            text-align: center
+        }
+        #lead-down i {
+            animation: pulsate 1.5s ease;
+            animation-iteration-count: infinite;
+            padding-top: 5px
         }
     }
