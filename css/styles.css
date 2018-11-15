@@ -325,7 +325,7 @@
     #about p {
         color: black;
         font-family: ariel;
-        font-size: 1.35em;
+        font-size: 1.45em;
     }
     
     .image-container img {
@@ -433,7 +433,7 @@
         font-weight: 500
     }
     
-    @media only screen and (max-width: 92px) {
+    @media only screen and (max-width: 150px) {
         #lead {
             height: auto;
             min-height: auto;
@@ -459,6 +459,18 @@
         }
         #about p {
             text-align: left
+        }
+        #about {
+            padding: 0px;
+            border-bottom: 1px solid #dcd9d9;
+            text-align: center;
+        }
+        #about h2 {
+            color: black;
+        }
+        #about p {
+            color: black;
+            font-family: ariel;
         }
     }
     
