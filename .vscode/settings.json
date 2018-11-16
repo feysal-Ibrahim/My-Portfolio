@@ -1,5 +1,11 @@
 {
     "eslint.enable": false,
     "jshint.enable": false,
-    "tslint.enable": false
+    "tslint.enable": false,
+    "spellright.language": [],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ]
 }
